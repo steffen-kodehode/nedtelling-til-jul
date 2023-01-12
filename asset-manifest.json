@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/nedtelling-til-jul/static/css/main.fee1b782.css",
+    "main.js": "/nedtelling-til-jul/static/js/main.543df1ac.js",
+    "static/js/787.6fd14f93.chunk.js": "/nedtelling-til-jul/static/js/787.6fd14f93.chunk.js",
+    "static/media/christmas-ornament-background.jpg": "/nedtelling-til-jul/static/media/christmas-ornament-background.15c50f97aa541177ad5e.jpg",
+    "index.html": "/nedtelling-til-jul/index.html",
+    "main.fee1b782.css.map": "/nedtelling-til-jul/static/css/main.fee1b782.css.map",
+    "main.543df1ac.js.map": "/nedtelling-til-jul/static/js/main.543df1ac.js.map",
+    "787.6fd14f93.chunk.js.map": "/nedtelling-til-jul/static/js/787.6fd14f93.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fee1b782.css",
+    "static/js/main.543df1ac.js"
+  ]
+}
