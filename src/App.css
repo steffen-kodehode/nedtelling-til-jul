@@ -1,8 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap");
+
 html {
-  background-color: #fde9ce;
+  background: url(./Components/Images/christmas-ornament-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body {
+  font-family: "Mountains of Christmas", cursive;
   color: #990a02;
 }
 
@@ -13,6 +18,7 @@ body {
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  font-size: 1.5em;
 
   margin: 0% 20% 0% 20%;
   padding: 5% 0% 16% 0%;
@@ -58,8 +64,8 @@ body {
   padding: 0% 0% 0% 0%;
 }
 
-.timerspacer {
-  padding: 0em 0.5em 0em 0.5em;
+.guestbookh2 {
+  font-size: 1.7em;
 }
 
 .Comment-box {
@@ -69,7 +75,7 @@ body {
   align-items: center;
   background-color: #03a24d;
   margin: 0 20% 0 20%;
-  padding: 5% 0 0% 0;
+  padding: 3% 0 0% 0;
 }
 
 .messagecontainer {
@@ -99,12 +105,15 @@ body {
   margin: 0% 0% 0% 0%;
   padding: 0% 0% 0% 0%;
   color: black;
+  font-size: 1.3em;
+  font-weight: 700;
 }
 
 .timestamp {
   margin: 0% 0% 10% 0%;
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.51);
+  font-size: 1em;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(0, 0, 0);
 }
 
 .message {
