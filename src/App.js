@@ -1,15 +1,11 @@
 import React from "react";
 import CountdownTimer from "./Components/Counter";
 import { useState } from "react";
+import GuestBook from "./Components/Guestbook";
 
 import "./App.css";
 
-// "24 December ${year} 00:00"
-// "24 December 2023 00:00"
-
 function App() {
-  // const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
-
   const [day, setDay] = useState(24);
 
   const [month, setMonth] = useState("December");
@@ -28,8 +24,12 @@ function App() {
 
   return (
     <div>
-      <h1>Countdown Timer</h1>
-      <CountdownTimer targetDate={christmasEve} />
+      <div className="countdowntimer">
+        <CountdownTimer targetDate={christmasEve} />
+      </div>
+      <div>
+        <GuestBook />
+      </div>
     </div>
   );
 }

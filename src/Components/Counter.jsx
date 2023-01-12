@@ -3,14 +3,14 @@ import DateTimeDisplay from "./DateTimeDisplay";
 import { useCountdown } from "../hooks/CountdownHook";
 import { useState } from "react";
 
-// const ExpiredNotice = () => {
-//   return (
-//     <div className="expired-notice">
-//       <span>Expired!!!</span>
-//       <p>Please select a future date and time.</p>
-//     </div>
-//   );
-// };
+const ChristmasGreeting = () => {
+  return (
+    <div className="christmas-greeting">
+      <h1>MERRY CHRISTMASS!</h1>
+      <h3>Hava a Lovely Christmas Time!</h3>
+    </div>
+  );
+};
 
 const ShowCounter = ({ days, hours, minutes, seconds }) => {
   return (
@@ -22,7 +22,7 @@ const ShowCounter = ({ days, hours, minutes, seconds }) => {
         className="countdown-link"
       >
       </a> */}
-      <div>
+      <div className="Days">
         <DateTimeDisplay
           className="DateTimeDisplay"
           value={days}
@@ -30,8 +30,8 @@ const ShowCounter = ({ days, hours, minutes, seconds }) => {
           isDanger={days <= 3}
         />
       </div>
-      <p className="timerspacer">|</p>
-      <div>
+      {/* <p className="timerspacer">:</p> */}
+      <div className="Hours">
         <DateTimeDisplay
           className="DateTimeDisplay"
           value={hours}
@@ -39,8 +39,8 @@ const ShowCounter = ({ days, hours, minutes, seconds }) => {
           isDanger={false}
         />
       </div>
-      <p className="timerspacer">|</p>
-      <div>
+      {/* <p className="timerspacer">:</p> */}
+      <div className="Minutes">
         <DateTimeDisplay
           className="DateTimeDisplay"
           value={minutes}
@@ -48,8 +48,8 @@ const ShowCounter = ({ days, hours, minutes, seconds }) => {
           isDanger={false}
         />
       </div>
-      <p className="timerspacer">|</p>
-      <div>
+      {/* <p className="timerspacer">:</p> */}
+      <div className="Seconds">
         <DateTimeDisplay
           className="DateTimeDisplay"
           value={seconds}
@@ -64,16 +64,21 @@ const ShowCounter = ({ days, hours, minutes, seconds }) => {
 const CountdownTimer = ({ targetDate }) => {
   const [days, hours, minutes, seconds] = useCountdown(targetDate);
 
-  //   if (days + hours + minutes + seconds <= 0) {
-  //   }
-  return (
-    <ShowCounter
-      days={days}
-      hours={hours}
-      minutes={minutes}
-      seconds={seconds}
-    />
-  );
+  if (days + hours + minutes + seconds <= 0) {
+    return <ChristmasGreeting />;
+  } else {
+    return (
+      <div>
+        <h1 className="timerhead">Time Until christmas Eve</h1>
+        <ShowCounter
+          days={days}
+          hours={hours}
+          minutes={minutes}
+          seconds={seconds}
+        />
+      </div>
+    );
+  }
 };
 
 export default CountdownTimer;
