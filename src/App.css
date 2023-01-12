@@ -1,50 +1,113 @@
-.App {
-  text-align: center;
+html {
+  background-color: #fde9ce;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  color: #990a02;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.countdowntimer {
+  background-color: #980000;
+  color: #029664;
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  margin: 0% 20% 0% 20%;
+  padding: 5% 0% 16% 0%;
 }
 
-.App-link {
-  color: #61dafb;
+.timers {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.timer {
+  font-size: 1.2em;
+  margin: 0% 0% 0% 0%;
+}
+
+.Days,
+.Hours,
+.Minutes,
+.Seconds {
+  padding: 2% 5% 2% 5%;
+  margin: 0% 3% 0% 3%;
+  background-color: #00d604;
+  color: #000000;
+
+  border: black 2px solid;
+  border-radius: 40%;
+  box-shadow: 10px /*<-left-right*/ 10px /*<-p down*/ 15px /*<-blur*/ -5px /*<-spread*/
+    rgb(197, 5, 85);
+}
+
+.timerhead {
+  margin: 0% 0% 25% 0%;
 }
 
 .show-counter {
   display: flex;
   flex-flow: row;
-
-  margin: 0em 0em 0em 1em;
-  padding: 0em 0em 0em 0em;
+  align-items: center;
+  justify-content: center;
+  margin: 0% 5% 0% 5%;
+  padding: 0% 0% 0% 0%;
 }
 
 .timerspacer {
-  padding: 0em 1em 0em 0em;
+  padding: 0em 0.5em 0em 0.5em;
+}
+
+.Comment-box {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #03a24d;
+  margin: 0 20% 0 20%;
+  padding: 5% 0 0% 0;
+}
+
+.messagecontainer {
+  background-color: #00bc4b;
+  padding: 0 10% 0 10%;
+  margin: 5% 0% 15% 0%;
+  border: solid black 2px;
+  border-radius: 10%;
+  box-shadow: 8px /*<-left-right*/ 10px /*<-p down*/ 15px /*<-blur*/ -5px /*<-spread*/
+    #000000de;
+  /* display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center; */
+}
+
+.posted-messages {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0% 0% 0% 0%;
+}
+
+.messagetext {
+  margin: 0% 0% 0% 0%;
+  padding: 0% 0% 0% 0%;
+  color: black;
+}
+
+.timestamp {
+  margin: 0% 0% 10% 0%;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.51);
+}
+
+.message {
+  padding: 0%;
+  margin: 5% 0% 0% 0%;
 }
