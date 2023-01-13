@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
-// import TimeStamp from "./TimeStamp";
 
 const GuestBook = () => {
   const [messages, setMessages] = useState(() => {
@@ -40,7 +39,7 @@ const GuestBook = () => {
 
   return (
     <div className="Comment-box">
-      <h2>Please Leave a Christmas Greeting</h2>
+      <h2 className="guestbookh2">Please Leave a Christmas Greeting</h2>
       <form onSubmit={handleFormSubmit}>
         <input
           name="message"
